@@ -3,20 +3,20 @@
     <Type Value="OpenSpan.Automation.Automator" />
     <Assembly Value="OpenSpan.Automation" />
     <AssemblyReferences>
-      <Assembly Value="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
       <Assembly Value="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+      <Assembly Value="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+      <Assembly Value="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
       <Assembly Value="OpenSpan, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OpenSpan.Automation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OpenSpan.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OpenSpan.Runtime.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
-      <Assembly Value="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
     </AssemblyReferences>
     <DynamicAssemblyReferences />
     <FileReferences />
     <BuildReferences />
   </ComponentInfo>
   <Component Version="1.0">
-    <OpenSpan.Automation.Automator Name="Automation1" Id="Automator-8D634207471FF03">
+    <OpenSpan.Automation.Automator Name="DisplayMessage" Id="Automator-8D634207471FF03">
       <AutomationDocument>
         <Name Value="" />
         <Size Value="5000, 5000" />
@@ -60,7 +60,7 @@
         </Objects>
         <Links>
           <Link PartID="3" Sensitive="False" Asynchronous="False" LogBeforeExecution="" LogAfterExecution="">
-            <From PartID="1" PortName="Raised" PortType="Event" ConnectableId="Automator-8D634207471FF03\ConnectableEvent-8D6342079B74419" MemberComponentId="Automator-8D634207471FF03\EMPTY" />
+            <From PartID="1" PortName="Raised" PortType="Event" ConnectableId="Automator-8D634207471FF03\ConnectableEvent-8D6342079B74419" MemberComponentId="Automator-8D634207471FF03\ConnectableEvent-8D6342079B74419" />
             <To PartID="2" PortName="DoWork" PortType="Method" ConnectableId="Automator-8D634207471FF03\ConnectableProperties-8D6342085E5D127" MemberComponentId="Automator-8D634207471FF03\ConnectableProperties-8D6342085E5D127" />
             <LinkPoints>
               <Point value="288, 149" />
@@ -89,8 +89,8 @@
             <LinkPoints>
               <Point value="449, 166" />
               <Point value="459, 166" />
-              <Point value="487, 166" />
-              <Point value="487, 166" />
+              <Point value="459, 166" />
+              <Point value="459, 166" />
               <Point value="515, 166" />
               <Point value="525, 166" />
             </LinkPoints>

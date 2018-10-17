@@ -136,7 +136,7 @@
     <EmbeddedResource Include="Properties\ImportTypeMap.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Automation1.os">
+    <Compile Include="DisplayMessage.os">
       <SubType>Component</SubType>
       <Id>Automator-8D634207471FF03</Id>
     </Compile>
