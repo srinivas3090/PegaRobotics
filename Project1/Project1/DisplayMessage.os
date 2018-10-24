@@ -1,4 +1,4 @@
-<OpenSpanDesignDocument Version="8.0.1026.0" Serializer="2.0" Culture="en-US">
+<OpenSpanDesignDocument Version="8.0.2000.3" Serializer="2.0" Culture="en-US">
   <ComponentInfo>
     <Type Value="OpenSpan.Automation.Automator" />
     <Assembly Value="OpenSpan.Automation" />
