@@ -9,7 +9,7 @@
       <Assembly Value="OpenSpan, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OpenSpan.Automation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OpenSpan.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
-      <Assembly Value="OpenSpan.Runtime.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
+      <Assembly Value="OpenSpan.UnitTesting, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
     </AssemblyReferences>
     <DynamicAssemblyReferences />
     <FileReferences />
@@ -21,17 +21,6 @@
         <Name Value="" />
         <Size Value="5000, 5000" />
         <Objects>
-          <ConnectionBlock>
-            <DisplayName Value="RuntimeLoader.AllProjectsStarted" />
-            <ConnectableUniqueId Value="Automator-8D634207471FF03\ConnectableEvent-8D6342079B74419" />
-            <PartID Value="1" />
-            <Left Value="20" />
-            <Top Value="120" />
-            <Collapsed Value="True" />
-            <WillExecute Value="True" />
-            <InstanceName Value="OpenSpan.Runtime.RuntimeLoader" />
-            <OverriddenIds />
-          </ConnectionBlock>
           <ConnectionBlock>
             <DisplayName Value="Properties" />
             <ConnectableUniqueId Value="Automator-8D634207471FF03\ConnectableProperties-8D6342085E5D127" />
@@ -57,20 +46,25 @@
             </Fittings>
             <OverriddenIds />
           </ConnectionBlock>
+          <ConnectionBlock>
+            <ConnectableUniqueId Value="Automator-8D634207471FF03\EntryPoint-8D63F1D058A4790" />
+            <Left Value="146" />
+            <Top Value="135" />
+            <PartID Value="8" />
+          </ConnectionBlock>
+          <ConnectionBlock>
+            <DisplayName Value="Succeeded" />
+            <ConnectableUniqueId Value="Automator-8D634207471FF03\TestSuccessful-8D63F1D208FE7CD" />
+            <PartID Value="10" />
+            <Left Value="760" />
+            <Top Value="120" />
+            <Collapsed Value="False" />
+            <WillExecute Value="True" />
+            <InstanceName Value="Test" />
+            <OverriddenIds />
+          </ConnectionBlock>
         </Objects>
         <Links>
-          <Link PartID="3" Sensitive="False" Asynchronous="False" LogBeforeExecution="" LogAfterExecution="">
-            <From PartID="1" PortName="Raised" PortType="Event" ConnectableId="Automator-8D634207471FF03\ConnectableEvent-8D6342079B74419" MemberComponentId="Automator-8D634207471FF03\ConnectableEvent-8D6342079B74419" />
-            <To PartID="2" PortName="DoWork" PortType="Method" ConnectableId="Automator-8D634207471FF03\ConnectableProperties-8D6342085E5D127" MemberComponentId="Automator-8D634207471FF03\ConnectableProperties-8D6342085E5D127" />
-            <LinkPoints>
-              <Point value="288, 149" />
-              <Point value="298, 149" />
-              <Point value="317, 149" />
-              <Point value="317, 149" />
-              <Point value="335, 149" />
-              <Point value="345, 149" />
-            </LinkPoints>
-          </Link>
           <Link PartID="6" Sensitive="False" Asynchronous="False" LogBeforeExecution="" LogAfterExecution="">
             <From PartID="2" PortName="Complete" PortType="Event" ConnectableId="Automator-8D634207471FF03\ConnectableProperties-8D6342085E5D127" MemberComponentId="Automator-8D634207471FF03\ConnectableProperties-8D6342085E5D127" />
             <To PartID="5" PortName="DoWork" PortType="Method" ConnectableId="Automator-8D634207471FF03\ConnectableMethod-8D6342090E61EA7" MemberComponentId="Automator-8D634207471FF03\ConnectableMethod-8D6342090E61EA7" />
@@ -95,28 +89,40 @@
               <Point value="525, 166" />
             </LinkPoints>
           </Link>
+          <Link PartID="9" Sensitive="False" Asynchronous="False" LogBeforeExecution="" LogAfterExecution="">
+            <From PartID="8" PortName="Complete" PortType="Event" ConnectableId="Automator-8D634207471FF03\EntryPoint-8D63F1D058A4790" MemberComponentId="Automator-8D634207471FF03\EntryPoint-8D63F1D058A4790" />
+            <To PartID="2" PortName="DoWork" PortType="Method" ConnectableId="Automator-8D634207471FF03\ConnectableProperties-8D6342085E5D127" MemberComponentId="Automator-8D634207471FF03\ConnectableProperties-8D6342085E5D127" />
+            <LinkPoints>
+              <Point value="257, 153" />
+              <Point value="267, 153" />
+              <Point value="301, 153" />
+              <Point value="301, 149" />
+              <Point value="335, 149" />
+              <Point value="345, 149" />
+            </LinkPoints>
+          </Link>
+          <Link PartID="12" Sensitive="False" Asynchronous="False" LogBeforeExecution="" LogAfterExecution="">
+            <From PartID="5" PortName="Complete" PortType="Event" ConnectableId="Automator-8D634207471FF03\ConnectableMethod-8D6342090E61EA7" MemberComponentId="Automator-8D634207471FF03\ConnectableMethod-8D6342090E61EA7" />
+            <To PartID="10" PortName="DoWork" PortType="Method" ConnectableId="Automator-8D634207471FF03\TestSuccessful-8D63F1D208FE7CD" MemberComponentId="Automator-8D634207471FF03\TestSuccessful-8D63F1D208FE7CD" />
+            <LinkPoints>
+              <Point value="671, 149" />
+              <Point value="681, 149" />
+              <Point value="718, 149" />
+              <Point value="718, 149" />
+              <Point value="755, 149" />
+              <Point value="765, 149" />
+            </LinkPoints>
+          </Link>
         </Links>
         <Comments />
         <SubGraphs />
       </AutomationDocument>
-    </OpenSpan.Automation.Automator>
-    <OpenSpan.Automation.ConnectableEvent Name="connectableEvent1" Id="ConnectableEvent-8D6342079B74419">
-      <ComponentName Value="OpenSpan.Runtime.RuntimeLoader" />
-      <DisplayName Value="RuntimeLoader.AllProjectsStarted" />
-      <ExceptionsHandled Value="False" />
-      <InstanceTypeName Value="OpenSpan.Runtime.RuntimeLoader" />
-      <InstanceUniqueId Value="EMPTY" />
-      <MemberDetails Value=".AllProjectsStarted Event" />
-      <Content Name="MemberPrototypes">
+      <Content Name="DynamicMembers">
         <Items>
-          <OpenSpan.Automation.MemberPrototype>
-            <MemberName Value="AllProjectsStarted" />
-            <MemberType Value="Event" />
-            <TypeName Value="System.EventHandler" />
-          </OpenSpan.Automation.MemberPrototype>
+          <OpenSpan.DynamicMembers.DynamicMethodInfo dynamicType="Method" name="_EntryPointExecute" aliasName="Execute" visibility="DefaultOn" source="" blockTypeName="OpenSpan.Automation.Design.ConnectionBlocks.EntryPointExecuteBlock" returnType="System.Void" />
         </Items>
       </Content>
-    </OpenSpan.Automation.ConnectableEvent>
+    </OpenSpan.Automation.Automator>
     <OpenSpan.Controls.StringVariable Name="variable1" Id="StringVariable-8D6342085D3C0D8">
       <Scope Value="Local" Extended="True" />
       <Value Value="" />
@@ -189,5 +195,32 @@
         </Items>
       </Content>
     </OpenSpan.Automation.ConnectableMethod>
+    <OpenSpan.Automation.EntryPoint Name="entryPoint1" Id="EntryPoint-8D63F1D058A4790">
+      <AliasName Value="Execute" />
+      <ComponentName Value="&lt;No Instance&gt;" />
+      <DisplayName Value="" />
+      <ExceptionsHandled Value="False" />
+      <InstanceTypeName Value="OpenSpan.Automation.EntryPoint" />
+      <InstanceUniqueId Value="Automator-8D634207471FF03\EntryPoint-8D63F1D058A4790" />
+      <MemberDetails Value="" />
+      <MethodName Value="_EntryPointExecute" />
+      <Removing Value="False" />
+      <UnitTest Value="True" />
+      <UseAlias Value="True" />
+      <Content Name="DynamicMembers">
+        <Items>
+          <OpenSpan.DynamicMembers.DynamicPropertyInfo dynamicType="Property" name="Result" canRead="True" canWrite="True" type="System.Void" aliasName="Result" shouldSerialize="False" visibility="AlwaysHidden" source="" blockTypeName="" />
+        </Items>
+      </Content>
+    </OpenSpan.Automation.EntryPoint>
+    <OpenSpan.UnitTesting.TestSuccessful Name="testSuccessful1" Id="TestSuccessful-8D63F1D208FE7CD">
+      <ComponentName Value="testSuccessful1" />
+      <DisplayName Value="Succeeded" />
+      <ExceptionsHandled Value="False" />
+      <InstanceTypeName Value="OpenSpan.UnitTesting.TestSuccessful" />
+      <InstanceUniqueId Value="Automator-8D634207471FF03\TestSuccessful-8D63F1D208FE7CD" />
+      <MemberDetails Value="" />
+      <Message Value="Success" />
+    </OpenSpan.UnitTesting.TestSuccessful>
   </Component>
 </OpenSpanDesignDocument>
