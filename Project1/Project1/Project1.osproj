@@ -38,7 +38,7 @@
     <!-- Deployment -->
     <DeploymentPackage>True</DeploymentPackage>
     <DeploymentPath>bin\Debug\</DeploymentPath>
-    <DeploymentVersion>1.34</DeploymentVersion>
+    <DeploymentVersion>1.35</DeploymentVersion>
     <DeploymentVersionIncrement>True</DeploymentVersionIncrement>
     <DeploymentIncludeRunSettings>False</DeploymentIncludeRunSettings>
     <DeploymentTranslators>True</DeploymentTranslators>
