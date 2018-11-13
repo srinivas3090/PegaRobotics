@@ -172,5 +172,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\ImportTypeMap.resx" />
+    <EmbeddedResource Include="Properties\MessageManifest.resx" />
   </ItemGroup>
 </Project>
