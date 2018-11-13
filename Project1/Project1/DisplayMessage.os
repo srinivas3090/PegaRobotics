@@ -48,8 +48,8 @@
           </ConnectionBlock>
           <ConnectionBlock>
             <ConnectableUniqueId Value="Automator-8D634207471FF03\EntryPoint-8D63F1D058A4790" />
-            <Left Value="146" />
-            <Top Value="135" />
+            <Left Value="149" />
+            <Top Value="137" />
             <PartID Value="8" />
           </ConnectionBlock>
           <ConnectionBlock>
@@ -77,14 +77,14 @@
               <Point value="345, 149" />
             </LinkPoints>
           </Link>
-          <Link PartID="13" Sensitive="False" Asynchronous="False" LogBeforeExecution="" LogAfterExecution="">
+          <Link PartID="14" Sensitive="False" Asynchronous="False" LogBeforeExecution="" LogAfterExecution="">
             <From PartID="2" PortName="Complete" PortType="Event" ConnectableId="Automator-8D634207471FF03\ConnectableProperties-8D6342085E5D127" MemberComponentId="Automator-8D634207471FF03\ConnectableProperties-8D6342085E5D127" />
             <To PartID="10" PortName="DoWork" PortType="Method" ConnectableId="Automator-8D634207471FF03\TestSuccessful-8D63F1D208FE7CD" MemberComponentId="Automator-8D634207471FF03\TestSuccessful-8D63F1D208FE7CD" />
             <LinkPoints>
               <Point value="449, 149" />
               <Point value="459, 149" />
-              <Point value="459, 149" />
-              <Point value="459, 149" />
+              <Point value="497, 149" />
+              <Point value="497, 149" />
               <Point value="535, 149" />
               <Point value="545, 149" />
             </LinkPoints>
@@ -173,8 +173,8 @@
     </OpenSpan.Automation.ConnectableMethod>
     <OpenSpan.Automation.EntryPoint Name="entryPoint1" Id="EntryPoint-8D63F1D058A4790">
       <AliasName Value="Execute" />
-      <ComponentName Value="&lt;No Instance&gt;" />
-      <DisplayName Value="" />
+      <ComponentName Value="Execute" />
+      <DisplayName Value="Execute" />
       <ExceptionsHandled Value="False" />
       <InstanceTypeName Value="OpenSpan.Automation.EntryPoint" />
       <InstanceUniqueId Value="Automator-8D634207471FF03\EntryPoint-8D63F1D058A4790" />
