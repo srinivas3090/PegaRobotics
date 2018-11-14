@@ -191,5 +191,9 @@
       <SubType>Component</SubType>
       <Id>Automator-8D634207471FF03</Id>
     </Compile>
+    <Compile Include="Windows Form1.os">
+      <SubType>Component</SubType>
+      <Id>DesignForm-8D64A45E4E29C04</Id>
+    </Compile>
   </ItemGroup>
 </Project>
