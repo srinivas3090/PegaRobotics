@@ -179,5 +179,9 @@
       <SubType>Component</SubType>
       <Id>Automator-8D634207471FF03</Id>
     </Compile>
+    <Compile Include="StartProject.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D64A3C8E06A15E</Id>
+    </Compile>
   </ItemGroup>
 </Project>
