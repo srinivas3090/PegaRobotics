@@ -4,6 +4,7 @@
     <Assembly Value="OpenSpan.Automation" />
     <AssemblyReferences>
       <Assembly Value="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+      <Assembly Value="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
       <Assembly Value="OpenSpan, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OpenSpan.Automation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OpenSpan.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
@@ -21,16 +22,16 @@
         <Objects>
           <ConnectionBlock>
             <ConnectableUniqueId Value="Automator-8D6465895C923D8\EntryPoint-8D64658BE3A1020" />
-            <Left Value="110" />
-            <Top Value="59" />
+            <Left Value="113" />
+            <Top Value="61" />
             <PartID Value="1" />
           </ConnectionBlock>
           <ConnectionBlock>
             <DisplayName Value="Succeeded" />
             <ConnectableUniqueId Value="Automator-8D6465895C923D8\TestSuccessful-8D64658E9421B43" />
             <PartID Value="6" />
-            <Left Value="600" />
-            <Top Value="60" />
+            <Left Value="660" />
+            <Top Value="40" />
             <Collapsed Value="False" />
             <WillExecute Value="True" />
             <InstanceName Value="Test" />
@@ -58,6 +59,20 @@
             <InstanceName Value="variable1" />
             <OverriddenIds />
           </ConnectionBlock>
+          <ConnectionBlock>
+            <DisplayName Value="Show" />
+            <ConnectableUniqueId Value="Automator-8D6465895C923D8\ConnectableMethod-8D64A4188F5F235" />
+            <PartID Value="13" />
+            <Left Value="480" />
+            <Top Value="40" />
+            <Collapsed Value="False" />
+            <WillExecute Value="True" />
+            <InstanceName Value="messageDialog1" />
+            <Fittings>
+              <Result Collapsed="False" ActualText="Result" />
+            </Fittings>
+            <OverriddenIds />
+          </ConnectionBlock>
         </Objects>
         <Links>
           <Link PartID="11" Sensitive="False" Asynchronous="False" LogBeforeExecution="" LogAfterExecution="">
@@ -72,16 +87,28 @@
               <Point value="325, 89" />
             </LinkPoints>
           </Link>
-          <Link PartID="12" Sensitive="False" Asynchronous="False" LogBeforeExecution="" LogAfterExecution="">
+          <Link PartID="14" Sensitive="False" Asynchronous="False" LogBeforeExecution="" LogAfterExecution="">
             <From PartID="10" PortName="Complete" PortType="Event" ConnectableId="Automator-8D6465895C923D8\ConnectableProperties-8D6465A231A6177" MemberComponentId="Automator-8D6465895C923D8\ConnectableProperties-8D6465A231A6177" />
-            <To PartID="6" PortName="DoWork" PortType="Method" ConnectableId="Automator-8D6465895C923D8\TestSuccessful-8D64658E9421B43" MemberComponentId="Automator-8D6465895C923D8\TestSuccessful-8D64658E9421B43" />
+            <To PartID="13" PortName="DoWork" PortType="Method" ConnectableId="Automator-8D6465895C923D8\ConnectableMethod-8D64A4188F5F235" MemberComponentId="Automator-8D6465895C923D8\ConnectableMethod-8D64A4188F5F235" />
             <LinkPoints>
               <Point value="429, 89" />
               <Point value="439, 89" />
-              <Point value="517, 89" />
-              <Point value="517, 89" />
-              <Point value="595, 89" />
-              <Point value="605, 89" />
+              <Point value="457, 89" />
+              <Point value="457, 69" />
+              <Point value="475, 69" />
+              <Point value="485, 69" />
+            </LinkPoints>
+          </Link>
+          <Link PartID="15" Sensitive="False" Asynchronous="False" LogBeforeExecution="" LogAfterExecution="">
+            <From PartID="13" PortName="Complete" PortType="Event" ConnectableId="Automator-8D6465895C923D8\ConnectableMethod-8D64A4188F5F235" MemberComponentId="Automator-8D6465895C923D8\ConnectableMethod-8D64A4188F5F235" />
+            <To PartID="6" PortName="DoWork" PortType="Method" ConnectableId="Automator-8D6465895C923D8\TestSuccessful-8D64658E9421B43" MemberComponentId="Automator-8D6465895C923D8\TestSuccessful-8D64658E9421B43" />
+            <LinkPoints>
+              <Point value="631, 69" />
+              <Point value="641, 69" />
+              <Point value="648, 69" />
+              <Point value="648, 69" />
+              <Point value="655, 69" />
+              <Point value="665, 69" />
             </LinkPoints>
           </Link>
         </Links>
@@ -156,5 +183,56 @@
       <Scope Value="Local" Extended="True" />
       <Value Value="" />
     </OpenSpan.Controls.StringVariable>
+    <OpenSpan.Controls.MessageDialog Name="messageDialog1" Id="MessageDialog-8D64A41874363B3">
+      <Caption Value="Information" />
+      <Scope Value="Local" Extended="True" />
+    </OpenSpan.Controls.MessageDialog>
+    <OpenSpan.Automation.ConnectableMethod Name="connectableMethod1" Id="ConnectableMethod-8D64A4188F5F235">
+      <ComponentName Value="messageDialog1" />
+      <DisplayName Value="Show" />
+      <ExceptionsHandled Value="False" />
+      <InstanceTypeName Value="OpenSpan.Controls.MessageDialog" />
+      <InstanceUniqueId Value="Automator-8D6465895C923D8\MessageDialog-8D64A41874363B3" />
+      <MemberDetails Value=".Show() Method" />
+      <ParamsLength Value="0" />
+      <SerializedParamsDefaultValues Value="" />
+      <Content Name="DynamicMembers">
+        <Items>
+          <OpenSpan.DynamicMembers.DynamicPropertyInfo dynamicType="Property" name="Result" canRead="True" canWrite="False" type="System.Windows.Forms.DialogResult" aliasName="Result" shouldSerialize="False" visibility="DefaultOn" source="" blockTypeName="" />
+        </Items>
+      </Content>
+      <Content Name="MemberPrototypes">
+        <Items>
+          <OpenSpan.Automation.MemberPrototype>
+            <MemberName Value="Show" />
+            <MemberType Value="Method" />
+            <TypeAssemblyName Value="System.Windows.Forms" />
+            <TypeName Value="System.Windows.Forms.DialogResult" />
+            <Content Name="Signature">
+              <OpenSpan.Automation.MethodSignature>
+                <ReturnType Value="System.Windows.Forms.DialogResult" />
+                <Content Name="ParameterPrototype">
+                  <Items>
+                    <OpenSpan.Automation.ParameterPrototype>
+                      <CanRead Value="False" />
+                      <CanWrite Value="True" />
+                      <DefaultSet Value="True" />
+                      <DefaultValue Value="success" />
+                      <ParamName Value="message" />
+                      <Position Value="0" />
+                      <TypeName Value="System.String" />
+                    </OpenSpan.Automation.ParameterPrototype>
+                  </Items>
+                </Content>
+              </OpenSpan.Automation.MethodSignature>
+            </Content>
+          </OpenSpan.Automation.MemberPrototype>
+        </Items>
+      </Content>
+    </OpenSpan.Automation.ConnectableMethod>
+    <OpenSpan.Controls.MessageDialog Name="messageDialog2" Id="MessageDialog-8D64A4189B7D515">
+      <Caption Value="Information" />
+      <Scope Value="Local" Extended="True" />
+    </OpenSpan.Controls.MessageDialog>
   </Component>
 </OpenSpanDesignDocument>

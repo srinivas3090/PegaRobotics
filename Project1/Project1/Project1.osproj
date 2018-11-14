@@ -71,6 +71,18 @@
   </PropertyGroup>
   <Import Project="$(OpenSpanPath)\OpenSpan.targets" />
   <ItemGroup>
+    <Reference Include="OpenSpan.Adapters">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Adapters.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Adapters.Web">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Adapters.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Adapters.Windows">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Adapters.Windows.dll</HintPath>
+    </Reference>
     <Reference Include="OpenSpan.ApplicationFramework">
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.ApplicationFramework.dll</HintPath>
       <Private>False</Private>
@@ -178,10 +190,6 @@
     <Compile Include="DisplayMessage.os">
       <SubType>Component</SubType>
       <Id>Automator-8D634207471FF03</Id>
-    </Compile>
-    <Compile Include="StartProject.os">
-      <SubType>Component</SubType>
-      <Id>Automator-8D64A3C8E06A15E</Id>
     </Compile>
   </ItemGroup>
 </Project>

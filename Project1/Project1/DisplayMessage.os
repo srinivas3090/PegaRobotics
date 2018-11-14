@@ -48,8 +48,8 @@
           </ConnectionBlock>
           <ConnectionBlock>
             <ConnectableUniqueId Value="Automator-8D634207471FF03\EntryPoint-8D63F1D058A4790" />
-            <Left Value="100" />
-            <Top Value="120" />
+            <Left Value="103" />
+            <Top Value="122" />
             <PartID Value="8" />
           </ConnectionBlock>
           <ConnectionBlock>
@@ -78,7 +78,7 @@
             <OverriddenIds />
           </ConnectionBlock>
           <ConnectionBlock>
-            <DisplayName Value="Failed" />
+            <DisplayName Value="Test" />
             <ConnectableUniqueId Value="Automator-8D634207471FF03\TestFailed-8D64A3C40E8E767" />
             <PartID Value="21" />
             <Left Value="620" />
@@ -132,8 +132,8 @@
             <LinkPoints>
               <Point value="537, 214" />
               <Point value="547, 214" />
-              <Point value="581, 214" />
-              <Point value="581, 149" />
+              <Point value="548, 214" />
+              <Point value="548, 149" />
               <Point value="615, 149" />
               <Point value="625, 149" />
             </LinkPoints>
@@ -156,8 +156,8 @@
             <LinkPoints>
               <Point value="537, 230" />
               <Point value="547, 230" />
-              <Point value="581, 230" />
-              <Point value="581, 269" />
+              <Point value="548, 230" />
+              <Point value="548, 269" />
               <Point value="615, 269" />
               <Point value="625, 269" />
             </LinkPoints>
@@ -330,7 +330,7 @@
     </OpenSpan.Automation.ConnectableMethod>
     <OpenSpan.UnitTesting.TestFailed Name="testFailed1" Id="TestFailed-8D64A3C40E8E767">
       <ComponentName Value="testFailed1" />
-      <DisplayName Value="Failed" />
+      <DisplayName Value="Test" />
       <ExceptionsHandled Value="False" />
       <InstanceTypeName Value="OpenSpan.UnitTesting.TestFailed" />
       <InstanceUniqueId Value="Automator-8D634207471FF03\TestFailed-8D64A3C40E8E767" />
